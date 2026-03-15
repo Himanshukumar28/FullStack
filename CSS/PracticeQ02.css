@@ -6,7 +6,23 @@ p{
 h1{
     text-align: center;
     color: red;
+    font-family: Georgia;
 }
 h3{
     text-align: center;
+    color: black;
+}
+a{
+    text-decoration: none;
+    color: green;
+}
+button{
+    background-color: white;
+    color: blueviolet;
+}
+textarea{
+    color: black;
+}
+span{
+    text-decoration: underline;
 }
