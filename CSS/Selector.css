@@ -1,4 +1,12 @@
-*{
+/* UNIVERSAL SELECTOR */
+*{ 
     font-family: 'Courier New', Courier, monospace;
     background-color: skyblue;
 }
+/* ELEMENT SELECTOR */
+h3 , h1{
+    color: aquamarine;
+}
+/* ID SELECTOR */
+
+
