@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p {
+            display: none;
+        }
+        button {
+            background-color: aqua;
+        }
+        button:hover + p {
+            display: block;
+
+        }
+
+        img {
+            height: 300px;
+            width: 400px;
+        }
+        img:hover {
+            height: 400px;
+            width: 500px;
+            /* margin: 30px; */
+        }
+
+        input:focus {
+            background-color: aquamarine;
+        }
+
+        .btn-grad {
+  background-image: linear-gradient(to right, #314755 0%, #26a0da 51%, #314755 100%);
+}
+
+.btn-grad {
+  margin: 10px;
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+  display: block;
+  outline: none;
+  border: none;
+}
+
+.btn-grad:hover {
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
+}
+
+    </style>
+</head>
+<body>
+    <!-- <p>Lorem ipsum dolor sit amet consectetur.</p> -->
+    
+    <!-- <button>Regester</button> -->
+
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDKtJhnVE7y0Jc-kFpS5EYIOrD96HK3ko1Tg&s">
+
+    <input type="text">
+
+    <button class="btn-grad">Heloo</button>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur mollitia maxime repellat officia omnis quos! Dolores tenetur possimus rem, molestias est praesentium! Ipsum nemo eligendi distinctio tempore laboriosam expedita?</p>
+
+</body>
+</html>

@@ -5,20 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Myntra</title>
     <style>
+      * {
+        margin: 0;
+        padding: 0;   
+        box-sizing: border-box;  
+      }
+      body {
+          height: 1000px;
+      }
       .container {
+
         display: flex;
         height: 50px;
         justify-content: space-between;
-        position: fixed;
+        background: white;
+        position: sticky;
         top: 0;
         
       }
       .box {
         display: flex;
-        margin: 10px;
+
+        /* margin: 10px;
         padding: 30px;
-        width: 20px;
-        height: px;
+        width: 20px; */
+        justify-content: space-between ;
+        
       }
       
       
@@ -31,22 +43,25 @@
     />
   </head>
   <body>
+    <header>
     <div class="container">
       <div class="box">
         <img src="Images/myntra_logo.png">
-        <h4><span>MEN</span></h4>
-        <h4><span>WOMEN</span></h4>
-        <h4><span>KIDS</span></h4>
-        <h4><span>HOME</span></h4>
-        <h4><span>BEAUTY</span></h4>
-        <h4><span>GENZ</span></h4>
-        <h4><span>STUDIO</span></h4>
+        <span>MEN</span>
+        <span>WOMEN</span>
+        <span>KIDS</span>
+        <span>HOME</span>
+        <span>BEAUTY</span>
+        <span>GENZ</span>
+        <span>STUDIO</span>
       </div>
     </div>
+    </header>
 
-    <img
-      width="800px" src= "https://assets.myntassets.com/w_980,c_limit,fl_progressive,dpr_2.0/assets/images/2026/APRIL/12/XC10hxBQ_0180d5dccc7e4308bd4b44cefdaca489.png"
-    />
+    <div><img
+      width="800px" height="100" src= "https://assets.myntassets.com/w_980,c_limit,fl_progressive,dpr_2.0/assets/images/2026/APRIL/12/XC10hxBQ_0180d5dccc7e4308bd4b44cefdaca489.png"/>
+    </div>
+    
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
