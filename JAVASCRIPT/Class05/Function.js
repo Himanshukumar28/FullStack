@@ -110,6 +110,34 @@
 // console.log("percentage:" , studentReport.percentage);
 // console.log("attendance:" , studentReport.attendance);
 
+//IIFE
+// (function () {
+//     console.log("Hello");
+// })();
+
+// (function (a,b) {
+//     console.log(a + b);
+// })(19,23);
+
+//Q Print total number of Vowel or Consonant Present in String:
+
+function checkVowelConsonant(str){
+    let total = str.length;
+    let Vowel = 0;
+    let Consonant = 0;
+    for(let ch of str){
+        if(ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u') Vowel++;
+        else Consonant++;
+    }
+    return { Vowel, Consonant , total};
+}
+let result = checkVowelConsonant("hello javascript");
+console.log("Total Length of String is:" , result.total);
+console.log("Total Number of Vowel is:" , result.Vowel);
+console.log("Total Number of Consonant is:" , result.Consonant);
+
+
+
 
 
 
