@@ -27,7 +27,7 @@ console.log(str5.slice(0,4));
 
 //slice mein hum negative value de sakte hai
 // let str3 = str1.slice(-3);
-// console.log(str3);
+// console.log(str3); 
 
 
 //substring me negative index support nahi hein woh usee default 0 set kar deta hein 
@@ -37,6 +37,15 @@ let fruits = "apple mango graphs banana";
 
 let result = fruits.split(" ");
 console.log(result);
+
+//Replace method
+let msg = 'Ilovecoding';
+console.log(msg.replace("love" , "enjoy"));
+
+//Repeat Method
+console.log(msg.repeat(2));
+
+
 
 
 
