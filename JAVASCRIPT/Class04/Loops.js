@@ -3,19 +3,19 @@
 //}
 
 //Print Odd Numbers (1 to 15)
-for(let i = 1; i<=15; i += 2){
-    //console.log(i);
-}
+// for(let i = 1; i<=15; i += 2){
+//     console.log(i);
+// }
 
 //Print all Even Number(2 to 10)
-for(let i =2; i<=10; i +=2){
-    //console.log(i);
-}
+// for(let i =2; i<=10; i +=2){
+//     console.log(i);
+// }
 //BackWard
-for(let i = 10; i>=2; i -= 2){
-    //console.log(i);
+// for(let i = 10; i>=2; i -= 2){
+//     console.log(i);
     
-}
+// }
 
 //INFINITE LOOPS
 // for(let i = 1; i>=0; i++){
@@ -23,9 +23,9 @@ for(let i = 10; i>=2; i -= 2){
 // }
 
 //Print the Multiplication table for 5
-for(let i = 5; i<=50; i= i+5){
-    //console.log(i);
-}
+// for(let i = 5; i<=50; i= i+5){
+//     console.log(i);
+// }
 //USER
 //let n = prompt("Write your number");
 //n = parseInt(n);
@@ -111,3 +111,35 @@ for(let i = 5; i<=50; i= i+5){
 //     }
 // }
 
+
+//TODO APP
+let todo = [];
+
+let req = prompt("please enter your request");
+
+while(true){
+    if(req == "quit"){
+        console.log("quitting app");
+        break;
+    }
+    if(req == "list"){
+        console.log("____________");
+        for(let i =0; i<todo.length; i++){
+            console.log(i , todo[i]);
+        }
+        console.log("____________");
+    } else if(req == "add"){
+        let task = prompt("please Enter the task you want to add");
+        todo.push(task);
+        console.log("task added");
+    }
+    else if(req == "delete"){
+        let idx = prompt("please enter the task index");
+        todo.splice(idx , 1);
+        console.log("task deleted");
+    } else {
+        console.log("wrong request");
+    }
+
+    req = prompt("Please enter your request");
+}
